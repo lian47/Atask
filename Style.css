@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #01010a;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        radial-gradient(circle at center, #0b0c1e 0%, #01010a 100%);
+
+    background-size: 50px 50px, 50px 50px, 100% 100%;
+    animation: moveGrid 2s linear infinite;
+}
+
+@keyframes moveGrid {
+    from {
+        background-position: 0 0, 0 0, center;
+    }
+
+    to {
+        background-position: 50px 0, 50px 0, center;
+    }
+}
+
+header {
+    color: rgb(255, 255, 255);
+}
